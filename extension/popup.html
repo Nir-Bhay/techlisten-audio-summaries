@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>🎧 TechListen</h2>
+      <p>Convert articles to audio</p>
+    </div>
+    
+    <div id="main-content">
+      <button id="extract-btn" class="primary-btn">
+        📄 Extract Article
+      </button>
+      
+      <div id="article-preview" style="display:none;">
+        <h4>Article Preview:</h4>
+        <p id="preview-text"></p>
+        <button id="summarize-btn" class="secondary-btn">
+          🧠 Generate Summary & Audio
+        </button>
+      </div>
+      
+      <div id="loading" style="display:none;">
+        <div class="spinner"></div>
+        <p id="loading-text">Processing...</p>
+      </div>
+      
+      <div id="result" style="display:none;">
+        <h4>Summary:</h4>
+        <p id="summary-text"></p>
+        
+        <div class="audio-player">
+          <audio id="audio-element" controls style="width:100%;">
+            <source id="audio-source" type="audio/mpeg">
+          </audio>
+        </div>
+        
+        <button id="try-again-btn" class="secondary-btn">
+          🔄 Try Another Article
+        </button>
+      </div>
+      
+      <div id="error" style="display:none;">
+        <p id="error-text"></p>
+        <button id="retry-btn" class="secondary-btn">Retry</button>
+      </div>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
