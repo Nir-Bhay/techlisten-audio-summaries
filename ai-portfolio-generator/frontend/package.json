@@ -1,0 +1,36 @@
+{
+  "name": "ai-portfolio-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "14.0.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "@reduxjs/toolkit": "^2.0.1",
+    "react-redux": "^9.0.4",
+    "axios": "^1.6.2",
+    "chart.js": "^4.4.1",
+    "react-chartjs-2": "^5.2.0",
+    "framer-motion": "^10.16.16",
+    "react-markdown": "^9.0.1",
+    "lucide-react": "^0.294.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.10.5",
+    "@types/react": "18.2.45",
+    "@types/react-dom": "18.2.18",
+    "typescript": "5.3.3",
+    "tailwindcss": "3.3.6",
+    "postcss": "8.4.32",
+    "autoprefixer": "10.4.16",
+    "eslint": "8.56.0",
+    "eslint-config-next": "14.0.4"
+  }
+}
